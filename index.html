@@ -32,16 +32,19 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Home</a>
+                        <a class="nav-link text-white" href="#heroWrapper">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link text-white" href="#callToActionWrapper">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Services</a>
+                        <a class="nav-link text-white" href="#packagesWrapper">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact</a>
+                        <a class="nav-link text-white" href="#contactWrapper">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <li><a href="tel:+1234567890" class="btn btn-call">Call</a></li>
                     </li>
                 </ul>
             </div>
@@ -67,9 +70,9 @@
                 <!-- Left Column with Catchy Phrase -->
                 <div class="col-md-7">
                     <div class="catchy-phrase">
-                        <h2>Make Waves with Foam-tastic Fun!</h2>
+                        <h2>Experience the Ultimate Foam Party!</h2>
                         <p>Unforgettable Foam Parties for Every Celebration</p>
-                        <a href="#" class="btn call-to-action-button">Give Us a Foam Call</a>
+                        <a href="tel:" class="btn call-to-action-button">Give Us a Foam Call</a>
                     </div>
                 </div>
                 <!-- Right Column with Circular Image in Hero Section -->
@@ -87,7 +90,7 @@
 <!-- Info Section -->
 <section class="info-section">
     <div class="container max-width-container">
-        <div class="row row-cools-xs-1 row-cols-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
             <!-- Column 1 - Who -->
             <div class="col">
                 <div class="card">
@@ -174,7 +177,7 @@
                     <div class="catchy-phrase">
                         <h2>Make Waves with Foam-tastic Fun!</h2>
                         <p>Unforgettable Foam Parties for Every Celebration</p>
-                        <a href="#" class="btn call-to-action-button">Give Us a Foam Call</a>
+                        <a href="tel:" class="btn call-to-action-button">Book Your Ultimate Party</a>
                     </div>
                 </div>
                 <!-- Right Column with Circular Image in Hero Section -->
@@ -199,9 +202,9 @@
 </section>
 
 <!-- New Foam Party Packages Section -->
-<section class="info-section">
+<section id="packagesWrapper" class="info-section">
     <div class="container max-width-container">
-        <div class="row row-cools-xs-1 row-cols-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
             <!-- Column 1 - Basic Foam Party -->
             <div class="col">
                 <div class="card">
@@ -287,6 +290,52 @@
     </div>
 </section>
 
+<!-- New Contact Form Section -->
+<section id="contactWrapper" class="contact-form-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="partyType" class="form-label">Party Type</label>
+                        <select class="form-control" id="partyType">
+                            <option value="">Select a party type</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Deluxe">Deluxe</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Ultimate">Ultimate</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="preferredDate" class="form-label">Preferred Date</label>
+                        <input type="date" class="form-control" id="preferredDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="preferredTime" class="form-label">Preferred Time</label>
+                        <input type="time" class="form-control" id="preferredTime" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="partyLocation" class="form-label">Party Location</label>
+                        <input type="text" class="form-control" id="partyLocation">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script src="assets/scripts/navigation.js"></script>
 
