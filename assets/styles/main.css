@@ -1,7 +1,7 @@
 :root {
     --background-blue: #0036d8;
     --gradient-blue-hlsa: 225, 100%, 42%, 1;
-    --bubble-image: url('../background.svg');
+    --bubble-image: url('../background.webp');
     --dark-orange: #e65c00;
     --default-orange:#ff6f00;
     --default-white: #ffffff;
@@ -133,7 +133,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 100%;
+    min-height: 1024px;
+    max-height:120%;
     position: absolute;
     mix-blend-mode: overlay;
     z-index: 0;
@@ -411,6 +412,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .navbar-logo {
+        max-width: 150px;
+        
+    }
+
     .call-to-action-section {
         padding: 60px 0; /* Adjust padding for smaller screens */
     }
@@ -471,10 +478,6 @@ body {
 .img-fluid {
     max-width: 100%;
     height: auto;
-}
-
-@media (max-width: 768px) {
-
 }
 
 /** Contact Area **/
