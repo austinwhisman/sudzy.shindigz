@@ -20,6 +20,37 @@ body {
     color: #333333;
 }
 
+.header {
+    color: var(--default-white);
+    font-family: 'Luckiest Guy', sans-serif; /* Fun font for branding */
+    font-weight: 400;
+    font-size: 1.5rem; /* Increase font size */
+    padding: 15px; /* Increase padding */
+    text-align: center; /* Center align header text */
+    position: relative;
+    z-index: 1;
+    overflow: hidden; /* Ensure the pseudo-element does not overflow */
+}
+
+.default-blue {
+    color: var(--background-blue);
+}
+
+.lucky-font {
+    font-family: 'Luckiest Guy', sans-serif; /* Fun font for branding */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform .8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Max width for content */
 .max-width-container {
     max-width: 1440px;
@@ -159,6 +190,14 @@ body {
     left: 0;
 }
 
+.body-text {
+    font-size: 1.2rem;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    color: #333333;
+}
+
 /* Cards styling */
 .card {
     margin-bottom: 20px;
@@ -205,7 +244,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
-    width: 400px;
+    width: 100%;
     height: 100%;
     position: absolute;
     mix-blend-mode: overlay;
