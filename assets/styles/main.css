@@ -1,5 +1,6 @@
 :root {
-    --background-blue: #0036d8;
+    --dark-blue: #0036d8;
+    --default-blue: #095EFF;
     --gradient-blue-hlsa: 225, 100%, 42%, 1;
     --bubble-image: url('../background.webp');
     --dark-orange: #e65c00;
@@ -33,7 +34,11 @@ body {
 }
 
 .default-blue {
-    color: var(--background-blue);
+    color: var(--default-blue);
+}
+
+.default-orange {
+    color: var(--default-orange);
 }
 
 .lucky-font {
@@ -80,7 +85,7 @@ body {
 }
 
 .navbar-scrolled {
-    background-color: var(--background-blue); /* Blue color when scrolled */
+    background-color: var(--default-blue); /* Blue color when scrolled */
 }
 
 /* Make all header text white */
@@ -91,14 +96,14 @@ body {
 
 .navbar-logo {
     height: 100%;
-    max-height: 75px; /* Adjust max-height as needed */
+    min-height: 75px; /* Adjust max-height as needed */
     width: 100%; /* Maintain aspect ratio */
     max-width: 400px;
     margin-right: 15px; /* Optional: Adjust spacing */
 }
 
 .btn-call {
-    background-color: #ff6f00; /* Match the call-to-action button color */
+    background-color: --default-orange; /* Match the call-to-action button color */
     color: #ffffff; /* White text */
     border-radius: 30px; /* Rounded corners */
     padding: 10px 20px; /* Padding */
@@ -125,7 +130,7 @@ body {
     }
 
     .custom-navbar {
-        background-color: var(--background-blue);
+        background-color: var(--default-blue);
     }
 
     .navbar-nav .nav-link:hover {
@@ -206,6 +211,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
+.card-text.footer {
+    padding-bottom: 20px;
+}
+
 .card-header {
     background-color: var(--card-header-blue);
     color: var(--default-white);
@@ -231,10 +240,26 @@ body {
 
 .card-body ul li {
     padding-bottom: 10px; /* Add space between each bullet point */
+    text-align: left; /* Align titles to the left */
+    list-style-type: none;
+}
+
+.card-body ul li:before {
+    content: "\f058"; /* FontAwesome content for fa-circle-check */
+    font-family: "Font Awesome 5 Free"; /* FontAwesome font family */
+    font-weight: 900; /* FontAwesome font weight */
+    color: var(--default-blue); /* Color using --default-blue variable */
+    margin:0 15px 0 -15px;
+    list-style-type: none;
+}
+
+ul.party-package > li:not(:first-child) {
+    border-top: 1px solid #ededed;
 }
 
 .card-body h5 {
     font-weight: bold;
+    text-align: left; /* Align titles to the left */
 }
 
 .card-header::before {
@@ -475,7 +500,7 @@ body {
 .who-we-are-section .section-title {
     font-family: 'Luckiest Guy', sans-serif; /* Fun font for section titles */
     font-size: 2.5rem;
-    color: var(--background-blue); /* Blue text */
+    color: var(--default-blue); /* Blue text */
     margin-bottom: 20px;
 }
 
@@ -499,7 +524,7 @@ body {
 }
 
 .who-we-are-section .call-to-action-button {
-    background-color: var(--background-blue); /* Blue button */
+    background-color: var(--default-blue); /* Blue button */
     color: #ffffff; /* White text */
     font-size: 1.2rem; /* Button font size */
     padding: 12px 24px; /* Button padding */
@@ -522,7 +547,7 @@ body {
 /** Contact Area **/
 
 .contact-form-section {
-    background-color: #0036d8; /* Same background color as the hero section */
+    background-color: var(--default-blue); /* Same background color as the hero section */
     padding: 50px 0;
     position: relative;
     z-index: 1;
@@ -546,8 +571,8 @@ body {
 }
 
 .contact-form-section .btn-primary {
-    background-color: #ff6f00; /* Match the call-to-action button color */
-    border-color: #ff6f00;
+    background-color: --default-orange; /* Match the call-to-action button color */
+    border-color: --default-orange;
     transition: background-color 0.3s ease-out;
 }
 
