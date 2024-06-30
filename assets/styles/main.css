@@ -103,7 +103,7 @@ body {
 }
 
 .btn-call {
-    background-color: --default-orange; /* Match the call-to-action button color */
+    background-color: var(--default-orange);; /* Match the call-to-action button color */
     color: #ffffff; /* White text */
     border-radius: 30px; /* Rounded corners */
     padding: 10px 20px; /* Padding */
@@ -251,6 +251,9 @@ body {
     color: var(--default-blue); /* Color using --default-blue variable */
     margin:0 15px 0 -15px;
     list-style-type: none;
+    display: block;
+    position: absolute;
+    left: 37px;
 }
 
 ul.party-package > li:not(:first-child) {
@@ -571,8 +574,8 @@ ul.party-package > li:not(:first-child) {
 }
 
 .contact-form-section .btn-primary {
-    background-color: --default-orange; /* Match the call-to-action button color */
-    border-color: --default-orange;
+    background-color: var(--default-orange); /* Match the call-to-action button color */
+    border-color: var(--default-orange);
     transition: background-color 0.3s ease-out;
 }
 
