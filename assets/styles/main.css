@@ -48,7 +48,7 @@ body {
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 1s ease-out, transform .8s ease-out;
+    transition: opacity .7s ease-out, transform .7s ease-out;
 }
 
 .fade-in.visible {
@@ -97,6 +97,7 @@ body {
 .navbar-logo {
     height: 100%;
     min-height: 75px; /* Adjust max-height as needed */
+    max-height: 100px; /* Adjust max-height as needed */
     width: 100%; /* Maintain aspect ratio */
     max-width: 400px;
     margin-right: 15px; /* Optional: Adjust spacing */
