@@ -130,7 +130,7 @@ body {
 
 @media (max-width: 991px) {
     .hero-section {
-        padding-top: 120px;
+        padding-top: 255px;
     }
 
     .hero-section::before {
