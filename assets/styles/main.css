@@ -129,9 +129,6 @@ body {
 }
 
 @media (max-width: 991px) {
-    .hero-section {
-        padding-top: 255px;
-    }
 
     .hero-section.call-to-action-section {
         padding-top: 60px;
@@ -141,10 +138,6 @@ body {
         height: 120%;
     }
 
-    .custom-navbar {
-        background-color: var(--default-blue);
-    }
-
     .navbar-nav .nav-link:hover {
         transform: none !important;
         background-color: var(--dark-orange);
@@ -152,6 +145,12 @@ body {
 
     .navbar-toggler-icon {
         color: var(--default-white) !important;
+    }
+
+    #navbarNav {
+        background-color: var(--default-blue);
+        position: relative;
+        top: 10px;
     }
 }
 
@@ -251,6 +250,7 @@ body {
     text-align: left;
     list-style-type: none;
     margin: 10px 10px;
+    color: #576185;
 }
 
 .card-body ul li:before {
@@ -370,9 +370,9 @@ ul.party-package > li:not(:first-child) {
 
 .catchy-phrase {
     color: var(--default-white);
-    padding: 40px 20px;
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .catchy-phrase h2 {
@@ -386,6 +386,22 @@ ul.party-package > li:not(:first-child) {
 .catchy-phrase p {
     font-size: 24px;
     line-height: 1.6;
+}
+
+
+@media (max-width: 1274px) {
+    .catchy-phrase {
+        padding: 40px 20px;
+        text-align: unset;
+    }
+}
+
+
+@media (min-width: 1275px) {
+    .catchy-phrase {
+        padding: 120px 20px 40px 20px;
+        text-align: left;
+    }
 }
 
 .container {
@@ -484,7 +500,19 @@ ul.party-package > li:not(:first-child) {
     width: calc(160% + 1.3px);
 }
 
+@media (min-width: 768px) and (max-width: 822px) {
+    .hero-section .container > .row {
+        position: relative;
+        top: 80px;
+    }
+}
+
 @media (max-width: 768px) {
+
+    .hero-section {
+        padding-top: 215px;
+    }
+
     .navbar.navbar-scrolled a > .navbar-logo {
         max-width: 150px;
     }
