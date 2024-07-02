@@ -482,7 +482,7 @@ ul.party-package > li:not(:first-child) {
 
 @media (max-width: 768px) {
     .navbar.navbar-scrolled a > .navbar-logo {
-        max-height: 100px;
+        max-width: 150px;
     }
 
     .navbar .navbar-toggler {
