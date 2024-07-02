@@ -119,8 +119,9 @@ body {
     padding: 10px 20px;
     border: none;
     transition: background-color 0.3s ease-out;
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 .btn-call:hover {
@@ -299,7 +300,7 @@ ul.party-package > li:not(:first-child) {
 .call-to-action-button {
     background-color: var(--default-orange);
     color: var(--default-white);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 12px 24px;
     border-radius: 30px;
     text-decoration: none;
@@ -568,7 +569,6 @@ ul.party-package > li:not(:first-child) {
 .who-we-are-section .call-to-action-button {
     background-color: var(--default-blue);
     color: #ffffff;
-    font-size: 1.2rem;
     padding: 12px 24px;
     border-radius: 30px;
     text-decoration: none;
