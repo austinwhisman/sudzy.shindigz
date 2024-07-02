@@ -15,10 +15,18 @@
     box-sizing: border-box;
 }
 
+.full-width {
+    width: 100%;
+}
+
 /* Default font for the entire page */
 body {
     font-family: 'Roboto', sans-serif; /* Clean and professional font */
     color: #333333;
+}
+
+.btn {
+    font-family: 'Luckiest Guy', sans-serif;  
 }
 
 .header {
@@ -243,6 +251,7 @@ body {
     padding-bottom: 10px; /* Add space between each bullet point */
     text-align: left; /* Align titles to the left */
     list-style-type: none;
+    margin: 10px 10px;
 }
 
 .card-body ul li:before {
