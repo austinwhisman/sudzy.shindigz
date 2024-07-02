@@ -19,9 +19,8 @@
     width: 100%;
 }
 
-/* Default font for the entire page */
 body {
-    font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 
@@ -31,14 +30,14 @@ body {
 
 .header {
     color: var(--default-white);
-    font-family: 'Luckiest Guy', sans-serif; /* Fun font for branding */
+    font-family: 'Luckiest Guy', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem; /* Increase font size */
-    padding: 15px; /* Increase padding */
-    text-align: center; /* Center align header text */
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
     position: relative;
     z-index: 1;
-    overflow: hidden; /* Ensure the pseudo-element does not overflow */
+    overflow: hidden;
 }
 
 .default-blue {
@@ -50,7 +49,7 @@ body {
 }
 
 .lucky-font {
-    font-family: 'Luckiest Guy', sans-serif; /* Fun font for branding */
+    font-family: 'Luckiest Guy', sans-serif;
 }
 
 .fade-in {
@@ -64,19 +63,18 @@ body {
     transform: translateY(0);
 }
 
-/* Max width for content */
 .max-width-container {
     max-width: 1440px;
-    margin: 0 auto; /* Center content horizontally */
-    padding: 0 15px; /* Add padding to prevent content from sticking to edges */
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .navbar-nav .nav-link {
-    transition: transform 0.3s ease-out; /* Scale text to 105% on hover */
+    transition: transform 0.3s ease-out;
 }
 
 .navbar-nav .nav-link:hover {
-    transform: scale(1.15); /* Scale text to 105% on hover */
+    transform: scale(1.15);
 }
 
 .custom-navbar {
@@ -85,53 +83,54 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent; /* Initially transparent background */
+    background-color: transparent;
     color: var(--default-white);
-    font-family: 'Luckiest Guy', sans-serif; /* Fun font for branding */
+    font-family: 'Luckiest Guy', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem; /* Increase font size */
+    font-size: 1.5rem;
 }
 
 .navbar-scrolled {
-    background-color: var(--default-blue); /* Blue color when scrolled */
+    background-color: var(--default-blue);
 }
 
-/* Make all header text white */
 .custom-navbar .navbar-brand,
 .custom-navbar .navbar-nav .nav-link {
-    color: var(--default-white) !important; /* White text color */
+    color: var(--default-white) !important;
 }
 
 .navbar-logo {
     height: 100%;
-    min-height: 75px; /* Adjust max-height as needed */
-    max-height: 100px; /* Adjust max-height as needed */
-    width: 100%; /* Maintain aspect ratio */
+    min-height: 75px;
+    max-height: 650px;
+    width: 100%;
     max-width: 400px;
-    margin-right: 15px; /* Optional: Adjust spacing */
+    margin-right: 15px;
+}
+
+.navbar.navbar-scrolled a > .navbar-logo {
+    max-height: 100px;
 }
 
 .btn-call {
-    background-color: var(--default-orange);; /* Match the call-to-action button color */
-    color: #ffffff; /* White text */
-    border-radius: 30px; /* Rounded corners */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove default border */
-    transition: background-color 0.3s ease-out; /* Smooth transition */
-    font-size: 1rem; /* Adjust font size */
+    background-color: var(--default-orange);
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-out;
+    font-size: 1rem;
     display: inline-block;
 }
 
 .btn-call:hover {
-    background-color: #ffcccb; /* Cotton pink on hover */
-    color: #0036d8; /* Blue text on hover */
+    background-color: #ffcccb;
+    color: #0036d8;
 }
 
-/* Remove growing effect when mobile nav is active */
 @media (max-width: 991px) {
-
     .hero-section {
-        padding-top: 120px; /* Adjust as needed to ensure content is visible */
+        padding-top: 120px;
     }
 
     .hero-section::before {
@@ -143,17 +142,15 @@ body {
     }
 
     .navbar-nav .nav-link:hover {
-        transform: none !important; /* Remove transition */
+        transform: none !important;
         background-color: var(--dark-orange);
     }
 
     .navbar-toggler-icon {
-        color: var(--default-white) !important; /* White color for mobile nav icon */
+        color: var(--default-white) !important;
     }
-    
 }
 
-/* Inline styles for the hero section */
 .hero-section {
     align-items: center;
     background: hsla(var( --gradient-blue));
@@ -185,21 +182,20 @@ body {
     z-index: 0;
 } 
 
-/* Styling for the circular hero image */
 .hero-circle {
-    width: 100%; /* Ensure the circle spans the entire width of its parent */
-    aspect-ratio: 1/1; /* Maintains a square aspect ratio */
-    border-radius: 50%; /* Creates a circular shape */
-    overflow: hidden; /* Hides any overflow content */
-    position: relative; /* Allows positioning of the image */
-    transition: transform 0.5s ease; /* Smooth transition for movement */
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s ease;
 }
 
 .hero-image {
-    width: 100%; /* Ensure the image fills the circular shape */
-    height: 100%; /* Ensure the image fills the circular shape */
-    object-fit: cover; /* Ensure the image covers the entire circular area */
-    position: absolute; /* Position the image inside the circle */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -208,16 +204,15 @@ body {
     font-size: 1.2rem;
     padding: 20px;
     line-height: 1.6;
-    font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    font-family: 'Roboto', sans-serif;
     color: #333333;
 }
 
-/* Cards styling */
 .card {
     margin-bottom: 20px;
     width: 100%;
-    border: none; /* Remove default border */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-text.footer {
@@ -227,38 +222,38 @@ body {
 .card-header {
     background-color: var(--card-header-blue);
     color: var(--default-white);
-    font-family: 'Luckiest Guy', sans-serif; /* Fun font for branding */
+    font-family: 'Luckiest Guy', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem; /* Increase font size */
-    padding: 15px; /* Increase padding */
-    text-align: center; /* Center align header text */
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
     position: relative;
     z-index: 1;
-    overflow: hidden; /* Ensure the pseudo-element does not overflow */
+    overflow: hidden;
 }
 
 .card-body {
-    font-size: 1.2rem; /* Increase font size */
-    padding: 20px; /* Increase padding */
-    line-height: 1.6; /* Improved line height for readability */
+    font-size: 1.2rem;
+    padding: 20px;
+    line-height: 1.6;
 }
 
 .card-body ul {
-    margin-bottom: 0; /* Remove default margin bottom */
+    margin-bottom: 0;
 }
 
 .card-body ul li {
-    padding-bottom: 10px; /* Add space between each bullet point */
-    text-align: left; /* Align titles to the left */
+    padding-bottom: 10px;
+    text-align: left;
     list-style-type: none;
     margin: 10px 10px;
 }
 
 .card-body ul li:before {
-    content: "\f058"; /* FontAwesome content for fa-circle-check */
-    font-family: "Font Awesome 5 Free"; /* FontAwesome font family */
-    font-weight: 900; /* FontAwesome font weight */
-    color: var(--default-blue); /* Color using --default-blue variable */
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--default-blue);
     margin:0 15px 0 -15px;
     list-style-type: none;
     display: block;
@@ -272,7 +267,7 @@ ul.party-package > li:not(:first-child) {
 
 .card-body h5 {
     font-weight: bold;
-    text-align: left; /* Align titles to the left */
+    text-align: left;
 }
 
 .card-header::before {
@@ -297,32 +292,31 @@ ul.party-package > li:not(:first-child) {
     transform: scaleX(-1);
 }
 
-/* Custom CSS for call-to-action button */
 .call-to-action-button {
-    background-color: var(--default-orange); /* Orange button color */
-    color: var(--default-white); /* White text color */
-    font-size: 1.2rem; /* Button font size */
-    padding: 12px 24px; /* Button padding */
-    border-radius: 30px; /* Rounded corners */
-    text-decoration: none; /* Remove default underline */
+    background-color: var(--default-orange);
+    color: var(--default-white);
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
     display: inline-block;
-    transition: transform 0.3s ease-out; /* Smooth transition with ease-out timing function */
+    transition: transform 0.3s ease-out;
 }
 
 .call-to-action-button:hover {
-    background-color: var(--dark-orange); /* Darker orange on hover */
-    color: var(--default-white); /* White text color on hover */
-    transform: scale(1.05); /* Scale button to 105% on hover */
+    background-color: var(--dark-orange);
+    color: var(--default-white);
+    transform: scale(1.05);
 }
 
 .wave-container {
     position: absolute;
-    bottom: 0; /* Position at the bottom of the hero section */
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 240px; /* Adjust height as needed */
-    overflow: hidden; /* Hide overflow for cleaner appearance */
-    z-index: 2; /* Ensure SVG path is above overlay */
+    height: 240px;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .wave-container.top {
@@ -345,7 +339,6 @@ ul.party-package > li:not(:first-child) {
     transform: rotate(0deg);
     position: relative;
     top: 0;
-    top: 0;
     bottom: unset;
 }
 
@@ -361,21 +354,21 @@ ul.party-package > li:not(:first-child) {
 
 .content {
     position: relative;
-    z-index: 3; /* Ensure content is above SVG path */
+    z-index: 3;
 }
 
 .info-section {
-    padding: 50px 20px; /* Adjust padding as needed */
-    background-color: var(--default-white); /* Background color for the info section */
-    color: #2E61FA; /* Text color */
-    text-align: center; /* Center text horizontally */
+    padding: 50px 20px;
+    background-color: var(--default-white);
+    color: #2E61FA;
+    text-align: center;
 }
 
 .catchy-phrase {
     color: var(--default-white);
     padding: 40px 20px;
     border-radius: 8px;
-    font-family: 'Roboto', sans-serif; /* Clean and professional font */
+    font-family: 'Roboto', sans-serif;
 }
 
 .catchy-phrase h2 {
@@ -395,19 +388,18 @@ ul.party-package > li:not(:first-child) {
     z-index: 3;
 }
 
-/** Call to action section **/
 .call-to-action-section {
     position: relative;
     background: linear-gradient(225deg, hsla(var(--gradient-blue-hlsa)) 37%, hsla(225, 95%, 58%, 1) 73%);
     color: var(--default-white);
     text-align: center;
-    padding: 100px 0; /* Adjust padding as needed */
-    overflow: hidden; /* Hide overflow to contain waves */
+    padding: 100px 0;
+    overflow: hidden;
 }
 
 .call-to-action-section::before {
     content: '';
-    background-image: var(--bubble-image); /* Bubble background image */
+    background-image: var(--bubble-image);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -465,17 +457,17 @@ ul.party-package > li:not(:first-child) {
 .wave-bottom {
     position: absolute;
     width: 100%;
-    height: 100px; /* Adjust height as needed */
+    height: 100px;
     overflow: hidden;
     z-index: -1;
 }
 
 .wave-top {
-    top: -1px; /* Position at the top of the section */
+    top: -1px;
 }
 
 .wave-bottom {
-    bottom: -1px; /* Position at the bottom of the section */
+    bottom: -1px;
 }
 
 .wave-svg {
@@ -489,14 +481,24 @@ ul.party-package > li:not(:first-child) {
 }
 
 @media (max-width: 768px) {
-
     .navbar-logo {
-        max-width: 150px;
-        
+        max-width: 650px;
     }
 
+    .navbar.navbar-scrolled a > .navbar-logo {
+        max-height: 100px;
+    }
+
+    .navbar .navbar-toggler {
+        margin: auto;
+    } 
+
+    .navbar.navbar-scrolled .navbar-toggler {
+        margin: unset;
+    } 
+
     .call-to-action-section {
-        padding: 60px 0; /* Adjust padding for smaller screens */
+        padding: 60px 0;
     }
 
     .catchy-phrase h2 {
@@ -504,52 +506,51 @@ ul.party-package > li:not(:first-child) {
     }
 }
 
-/** Who we are secyion **/
-
 .who-we-are-section {
     padding: 50px 0;
 }
 
 .who-we-are-section .section-title {
-    font-family: 'Luckiest Guy', sans-serif; /* Fun font for section titles */
+    font-family: 'Luckiest Guy', sans-serif;
     font-size: 2.5rem;
-    color: var(--default-blue); /* Blue text */
+    color: var(--default-blue);
     margin-bottom: 20px;
 }
 
 .who-we-are-section .text-container {
-    background-color: var(--default-orange); /* Orange background */
+    background-color: var(--default-orange);
     padding: 20px;
-    border-radius: 8px; /* Optional: Add rounded corners */
+    border-radius: 8px;
 }
 
 .who-we-are-section .lead {
     font-size: 1.5rem;
-    color: #ffffff; /* White text */
+    color: #ffffff;
     margin-bottom: 20px;
+    font-family: 'Luckiest Guy', sans-serif;  
 }
 
 .who-we-are-section .card-text {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #ffffff; /* White text */
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .who-we-are-section .call-to-action-button {
-    background-color: var(--default-blue); /* Blue button */
-    color: #ffffff; /* White text */
-    font-size: 1.2rem; /* Button font size */
-    padding: 12px 24px; /* Button padding */
-    border-radius: 30px; /* Rounded corners */
-    text-decoration: none; /* Remove default underline */
+    background-color: var(--default-blue);
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
     display: inline-block;
-    transition: background-color 0.3s ease-out; /* Smooth transition */
+    transition: background-color 0.3s ease-out;
 }
 
 .who-we-are-section .call-to-action-button:hover {
-    background-color: #ffcccb; /* Cotton pink on hover */
-    color: var(--default-white); /* White text on hover */
+    background-color: #ffcccb;
+    color: var(--default-white);
 }
 
 .img-fluid {
@@ -557,10 +558,8 @@ ul.party-package > li:not(:first-child) {
     height: auto;
 }
 
-/** Contact Area **/
-
 .contact-form-section {
-    background-color: var(--default-blue); /* Same background color as the hero section */
+    background-color: var(--default-blue);
     padding: 50px 0;
     position: relative;
     z-index: 1;
@@ -584,12 +583,12 @@ ul.party-package > li:not(:first-child) {
 }
 
 .contact-form-section .btn-primary {
-    background-color: var(--default-orange); /* Match the call-to-action button color */
+    background-color: var(--default-orange);
     border-color: var(--default-orange);
     transition: background-color 0.3s ease-out;
 }
 
 .contact-form-section .btn-primary:hover {
-    background-color: #ffcccb; /* Cotton pink on hover */
+    background-color: #ffcccb;
     border-color: #ffcccb;
 }
