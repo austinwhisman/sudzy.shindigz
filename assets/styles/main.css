@@ -481,10 +481,6 @@ ul.party-package > li:not(:first-child) {
 }
 
 @media (max-width: 768px) {
-    .navbar-logo {
-        max-width: 650px;
-    }
-
     .navbar.navbar-scrolled a > .navbar-logo {
         max-height: 100px;
     }
