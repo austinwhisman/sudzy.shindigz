@@ -14,6 +14,7 @@ class InitPageLoad {
         const utilityHelper = new UtilityHelper();
         const navHelper = new NavigationHelper();
         utilityHelper.addFunctionToDomEvent("DOMContentLoaded", utilityHelper.initFadeInListener());
+        utilityHelper.addFunctionToDomEvent("DOMContentLoaded", utilityHelper.initNavNightTimeEffect());
         utilityHelper.addFunctionToWindowEvent("scroll", navHelper.checkNav());
     }
 }

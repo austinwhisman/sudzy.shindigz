@@ -32,6 +32,33 @@ class UtilityHelper {
         });
     }
 
+    initNavNightTimeEffect() {
+        const navNode = document.querySelector('.custom-navbar');
+        const glowSection = document.querySelector('.glow-section.hero-section');
+
+        if (!navNode || !glowSection) {
+            return;
+        }
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.65
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navNode.classList.add('night-time');
+                } else {
+                    navNode.classList.remove('night-time');
+                }
+            });
+        }, observerOptions);
+
+        observer.observe(glowSection);
+    }
+
     addFunctionToDomEvent(domEvent, callback) {
         document.addEventListener(domEvent, callback);
     }

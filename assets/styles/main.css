@@ -120,9 +120,29 @@ body {
     background-color: var(--default-blue);
 }
 
+.navbar-scrolled.night-time {
+    background-color: #95ff88;
+    color: #ce347f;
+    border-bottom: 2px solid #39ff14;
+    animation: glow-border 1s infinite alternate;
+}
+
+@keyframes glow-border {
+    0% {
+        box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 15px #39ff14, 0 0 20px #39ff14;
+    }
+    100% {
+        box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+    }
+}
+
 .custom-navbar .navbar-brand,
 .custom-navbar .navbar-nav .nav-link {
-    color: var(--default-white) !important;
+    color: var(--default-white)
+}
+
+.custom-navbar.night-time .navbar-nav .nav-item > .nav-link {
+    color: #ce347f;
 }
 
 .navbar-logo {
@@ -179,6 +199,12 @@ body {
         position: relative;
         top: 10px;
     }
+
+    .night-time #navbarNav {
+        background-color: #95ff88;
+        position: relative;
+        top: 10px;
+    }
 }
 
 .hero-section {
@@ -196,6 +222,20 @@ body {
     overflow: hidden;
     position: relative;
     text-align: center;
+    align-items: center;
+}
+
+.hero-section .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-section .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .hero-section::before {
@@ -217,10 +257,9 @@ body {
 } 
 
 .glow-section.hero-section {
-
     background: none;
     background-image: radial-gradient(at center center, var(--default-blue) 0%, #000000B8 67%);
-
+    height: 100vh;
 }
 
 .hero-circle {
@@ -669,7 +708,7 @@ ul.party-package > li:not(:first-child) {
 }
 
 .contact-form-section {
-    background-color: var(--default-blue);
+    background-color: #95ff88;
     padding: 50px 0;
     position: relative;
     z-index: 1;
@@ -809,6 +848,7 @@ ul.party-package > li:not(:first-child) {
 
 .underline-svg {
     width: 100%; /* Ensure the SVG fills the width of its container */
+    max-width: 700px;
     height: auto;
     margin: 10px 0 20px 0;
 }
@@ -859,4 +899,8 @@ ul.party-package > li:not(:first-child) {
     background-image: none;
 }
 
-
+.what-you-need-icon {
+    width: 256px;
+    height: 256px;
+    position: relative;
+}
