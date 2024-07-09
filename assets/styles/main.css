@@ -7,6 +7,7 @@
     --default-orange:#ff6f00;
     --default-white: #ffffff;
     --card-header-blue: #688eff;
+    --neon-green: #39ff14;
 }
 
 * {
@@ -67,6 +68,24 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.glow {
+    color: white;
+    text-align: center;
+    animation: glow 2s ease-out infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 30px #fff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff;
+    }
 }
 
 .navbar-nav .nav-link {
@@ -185,6 +204,17 @@ body {
     mix-blend-mode: overlay;
     z-index: 0;
 } 
+
+.glow-section.hero-section::before {
+    background-image: url('../GlowInTheDark.jpg');
+} 
+
+.glow-section.hero-section {
+
+    background: none;
+    background-image: radial-gradient(at center center, var(--default-orange) 0%, #000000B8 67%);
+
+}
 
 .hero-circle {
     width: 100%;
@@ -312,6 +342,50 @@ ul.party-package > li:not(:first-child) {
     background-color: var(--dark-orange);
     color: var(--default-white);
     transform: scale(1.05);
+}
+
+.call-to-action-button.glow-in-the-dark {
+    background-color: #95ff88;
+    color: #ce347f;
+    font-size: 1.5rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.call-to-action-button.glow-in-the-dark::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid var(--neon-green);
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    animation: none;
+}
+
+.call-to-action-button.glow-in-the-dark:hover {
+    transform: scale(1.05);
+}
+
+.call-to-action-button.glow-in-the-dark::before {
+    opacity: 1;
+    animation: glow-border 1s infinite ease-in-out alternate;
+}
+
+@keyframes glow-border {
+    0% {
+        box-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 30px var(--neon-green), 0 0 40px var(--neon-green);
+    }
 }
 
 .wave-container {
