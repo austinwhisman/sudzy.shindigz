@@ -6,6 +6,7 @@
     --dark-orange: #e65c00;
     --default-orange:#ff6f00;
     --default-white: #ffffff;
+    --default-pink: #F53FFE;
     --card-header-blue: #688eff;
     --neon-green: #39ff14;
 }
@@ -70,6 +71,7 @@ body {
     padding: 0 15px;
 }
 
+
 .glow {
     color: white;
     text-align: center;
@@ -86,6 +88,11 @@ body {
     100% {
         text-shadow: 0 0 30px #fff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff;
     }
+}
+
+.left-img {
+    max-height: 550px;
+    border-radius: 55px;
 }
 
 .navbar-nav .nav-link {
@@ -212,7 +219,7 @@ body {
 .glow-section.hero-section {
 
     background: none;
-    background-image: radial-gradient(at center center, var(--default-orange) 0%, #000000B8 67%);
+    background-image: radial-gradient(at center center, var(--default-blue) 0%, #000000B8 67%);
 
 }
 
@@ -270,6 +277,7 @@ body {
     font-size: 1.2rem;
     padding: 20px;
     line-height: 1.6;
+    color: #576185;
 }
 
 .card-body ul {
@@ -281,14 +289,14 @@ body {
     text-align: left;
     list-style-type: none;
     margin: 10px 10px;
-    color: #576185;
+
 }
 
 .card-body ul li:before {
     content: "\f058";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    color: var(--default-blue);
+    color: var(--default-pink);
     margin:0 15px 0 -15px;
     list-style-type: none;
     display: block;
@@ -454,7 +462,7 @@ ul.party-package > li:not(:first-child) {
     text-transform: uppercase;
     margin-bottom: 20px;
     font-family: 'Luckiest Guy', sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     font-weight: 400;
 }
 
@@ -514,7 +522,7 @@ ul.party-package > li:not(:first-child) {
 
 .call-to-action-section .catchy-phrase h2 {
     font-family: 'Luckiest Guy', sans-serif;
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     font-weight: 400;
 }
 
@@ -759,7 +767,6 @@ ul.party-package > li:not(:first-child) {
     }
 }
 
-
 @media (min-width: 577px) and (max-width: 991px) {
     .non-bs-container {
         grid-template-columns: 1fr 1fr;
@@ -785,3 +792,71 @@ ul.party-package > li:not(:first-child) {
         grid-row: 3; 
     }
 }
+
+.simple-layout .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.simple-layout .section-title {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 2.5rem;
+    color: var(--default-blue);
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.underline-svg {
+    width: 100%; /* Ensure the SVG fills the width of its container */
+    height: auto;
+    margin: 10px 0 20px 0;
+}
+
+.simple-layout p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .simple-layout .row {
+        flex-direction: column-reverse;
+    }
+
+    .simple-layout p {
+        text-align: left;
+    }
+}
+
+.info-section.two-column-layout {
+    padding: 20px 20px
+
+}
+
+.two-column-layout .section-title {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 2.5rem;
+    color: var(--default-blue);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.two-column-layout .card-body p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333333;
+    text-align: left;
+}
+
+.two-column-layout .card-header {
+    background: unset;
+}
+
+.two-column-layout .card-header::before {
+    background-image: none;
+}
+
+
