@@ -280,6 +280,15 @@ body {
     left: 0;
 }
 
+.slider, .cta-slider {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider.active, .cta-slider.active {
+    opacity: 1;
+}
+
 .body-text {
     font-size: 1.2rem;
     padding: 20px;
@@ -883,7 +892,6 @@ ul.party-package > li:not(:first-child) {
     text-align: center;
 }
 
-
 .two-column-layout .card-body p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -908,4 +916,8 @@ ul.party-package > li:not(:first-child) {
 
 .what-you-need-icon-wrapper {
     margin-bottom: 80px;
+}
+
+.where-to-host-card-img {
+    height: 500px;
 }
