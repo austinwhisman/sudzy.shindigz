@@ -205,6 +205,11 @@ body {
         position: relative;
         top: 10px;
     }
+
+    .hero-circle{
+        max-width: 300px;
+        margin: auto;
+    }
 }
 
 .hero-section {
@@ -661,8 +666,17 @@ ul.party-package > li:not(:first-child) {
     }
 
     .catchy-phrase h2 {
-        font-size: 3.2rem;
+        font-size: 2rem;
     }
+    
+    .catchy-phrase p {
+        font-size: 18px;
+    }
+
+    .call-to-action-button {
+        font-size: 1.2rem;
+    }
+
 }
 
 .who-we-are-section {
