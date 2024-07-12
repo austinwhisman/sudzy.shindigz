@@ -2,13 +2,36 @@
     --dark-blue: #0036d8;
     --default-blue: #095EFF;
     --gradient-blue-hlsa: 225, 100%, 42%, 1;
-    --bubble-image: url('../background.webp');
+    --bubble-image: url('../images/background.webp');
     --dark-orange: #e65c00;
     --default-orange:#ff6f00;
     --default-white: #ffffff;
     --default-pink: #F53FFE;
     --card-header-blue: #688eff;
     --neon-green: #39ff14;
+}
+
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('../fonts/LuckiestGuy/LuckiestGuy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Roboto Regular */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Roboto Bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 * {
@@ -258,7 +281,7 @@ body {
 } 
 
 .glow-section.hero-section::before {
-    background-image: url('../GlowInTheDark.jpg');
+    background-image: url('../images/GlowInTheDark.webp');
 } 
 
 .glow-section.hero-section {
