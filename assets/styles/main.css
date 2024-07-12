@@ -91,7 +91,7 @@ body {
 .max-width-container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0;
 }
 
 
@@ -669,7 +669,7 @@ ul.party-package > li:not(:first-child) {
 @media (max-width: 768px) {
 
     .hero-section {
-        padding-top: 215px;
+        padding-top: 168px;
     }
 
     .navbar.navbar-scrolled a > .navbar-logo {
@@ -685,7 +685,7 @@ ul.party-package > li:not(:first-child) {
     } 
 
     .call-to-action-section {
-        padding: 60px 0;
+        padding: 60px 0px 0px 0px;
     }
 
     .catchy-phrase h2 {
@@ -700,6 +700,22 @@ ul.party-package > li:not(:first-child) {
         font-size: 1.2rem;
     }
 
+    #whatYouNeedWrapper .row>* {
+        padding: 0;
+    }
+
+    #whatYouNeedWrapper .call-to-action-section .card {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #whatYouNeedWrapper .call-to-action-section .card:nth-last-child() {
+        box-shadow: 0px;
+    }
+
+    .what-you-need-icon-wrapper p {
+        padding: 0px 55px;
+    }
 }
 
 .who-we-are-section {
@@ -834,16 +850,16 @@ ul.party-package > li:not(:first-child) {
 
     .first-row { 
         grid-column: 1; 
-        grid-row: 1; 
+        grid-row: 3; 
     }
 
     .second-row { 
         grid-column: 1; 
-        grid-row: 2; 
+        grid-row: 1; 
     }
     .third-row { 
         grid-column: 1; 
-        grid-row: 3; 
+        grid-row: 2; 
     }
 
     .fourth-row { 
@@ -860,16 +876,16 @@ ul.party-package > li:not(:first-child) {
 
     .first-row { 
         grid-column: 1 / span 2; 
-        grid-row: 1; 
+        grid-row: 2; 
     }
 
     .second-row { 
         grid-column: 1; 
-        grid-row: 2; 
+        grid-row: 1; 
     }
     .third-row { 
         grid-column: 2; 
-        grid-row: 2; 
+        grid-row: 1; 
     }
 
     .fourth-row { 
