@@ -960,7 +960,7 @@ ul.party-package > li:not(:first-child) {
     background-image: none;
 }
 
-.what-you-need-icon {
+.what-you-need-icon, .safe-icons {
     width: 128px;
     height: 128px;
     position: relative;
